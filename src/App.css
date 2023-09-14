@@ -1,0 +1,44 @@
+.App {
+  font-family: var(--primary-font);
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(0, 111, 126, 0.644)
+  );
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 4vmin;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+  width: fit-content;
+  color: white;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 25%;
+  aspect-ratio: 1;
+}
+
+.title {
+  font-size: 6vmin;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  padding: 10px 5%;
+  gap: 2rem;
+}

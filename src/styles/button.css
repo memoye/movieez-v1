@@ -1,0 +1,45 @@
+.button {
+  border: none;
+  display: flex;
+  align-items: center;
+  color: var(--rose-700);
+  background-color: rgba(190, 18, 61, 0.1);
+  min-width: fit-content;
+  gap: 8px;
+  font-size: 1rem;
+  letter-spacing: 1.1px;
+  padding: 0.75em 1em;
+  border: 1px solid transparent;
+  transition: all 200ms ease;
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  border-color: var(--rose-700);
+  color: #333;
+}
+
+.button > span {
+  font-size: 0.7em;
+}
+
+.filled {
+  background: var(--rose-700);
+  color: white;
+}
+
+.filled:hover {
+  filter: brightness(120%);
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    margin: auto;
+    font-size: 0.9rem;
+  }
+}

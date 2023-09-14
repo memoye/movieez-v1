@@ -1,0 +1,35 @@
+.searchPage {
+  padding-top: 3rem;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(0, 111, 126, 0.644)
+  );
+  max-width: 1440px;
+}
+
+.searchTitle {
+  padding: 10px 5%;
+}
+
+.searchText {
+  color: var(--rose-700);
+  font-style: italic;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  font-style: italic;
+}
+
+.error a {
+  text-decoration: underline;
+}
+
+.error a:hover {
+  color: var(--rose-700);
+}

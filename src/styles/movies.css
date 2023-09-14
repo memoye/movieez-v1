@@ -1,0 +1,169 @@
+/* .moviesPage { */
+/* padding-top: 3rem; */
+/* } */
+
+.otherPageLogo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  color: black;
+}
+
+.scrollingLogo span {
+  visibility: hidden;
+}
+
+.details {
+  margin-top: 3rem;
+  padding: 10px 5%;
+}
+
+.hs-responsive-embed-youtube {
+  position: relative;
+  padding-bottom: 42%; /* 16:9 Aspect Ratio */
+  padding-top: 25px;
+}
+.hs-responsive-embed-youtube iframe {
+  position: absolute;
+  width: 80% !important;
+  aspect-ratio: 16/8 !important;
+  /* height: 80% !important; */
+  right: 9%;
+  border: none;
+  border-radius: 10px;
+}
+
+.detailsText_heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 10px;
+}
+
+.detailsText_heading * {
+  margin: 0 !important;
+}
+
+.detailsText_title {
+  color: #404040;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5em;
+}
+
+.genresContainer {
+  display: flex;
+}
+
+.genre {
+  font-size: 0.55rem;
+  padding: 0.5em;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+.detailsRatingInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.movieOverview {
+  font-size: 1.25rem;
+}
+
+.movie_star {
+  font-size: 1.25rem;
+}
+
+.movie_star > span {
+  color: var(--rose-700);
+}
+
+.popularityNrecommendation {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  max-width: 300px;
+
+  gap: -5px;
+  justify-content: start;
+}
+
+.recommendations {
+  margin-left: -5px;
+  outline: none;
+  border: 1px solid #404040;
+  border-left: none;
+  padding: 0 5px;
+  z-index: 0;
+  max-width: 150px;
+}
+
+.castTitle {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  max-width: 100%;
+  gap: 2rem;
+}
+.castTitle span {
+  color: var(--rose-700);
+}
+
+.topCastArrow {
+  transition: transform 200ms ease-in;
+}
+
+.moreCast {
+  transform: rotate(90deg);
+}
+
+.castGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.rec_title {
+  font-weight: 900;
+}
+
+.movieInfo {
+  display: flex;
+  gap: 1rem;
+}
+
+.sideActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.moreSideActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.detailsLeft {
+}
+
+.detailsAside {
+}
+
+@media screen and (max-width: 768px) {
+  .movieInfo {
+    flex-direction: column;
+  }
+
+  .hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 90% !important;
+    aspect-ratio: 16/9 !important;
+    height: 80% !important;
+    right: 5%;
+  }
+}

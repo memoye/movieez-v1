@@ -1,0 +1,52 @@
+.footer {
+  margin-top: 1rem;
+  box-sizing: border-box;
+  padding: 2rem 5%;
+  width: 100vw;
+  padding-top: 4rem;
+  align-self: end;
+}
+
+.formalities,
+.sm {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.smLinks {
+  all: unset;
+  font-size: 4vmin;
+}
+
+.smLinks:hover {
+  color: var(--rose-700);
+}
+
+.signature {
+  text-align: center;
+  font-weight: 700;
+  color: var(--gray-400);
+}
+
+.signature a {
+  text-decoration: none;
+  color: var(--gray-400);
+}
+
+.signature a:hover {
+  text-decoration: none;
+  color: var(--gray-900);
+}
+
+.formalities {
+  margin: 1rem auto;
+  font-weight: 900;
+}
+
+.formalities a {
+  text-decoration: none;
+  color: var(--gray-900);
+}
